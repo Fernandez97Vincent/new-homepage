@@ -1,0 +1,84 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 100vh;
+    background-color: #EDCC8B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    color: rgb(252, 248, 248);
+}
+
+header {
+    margin-top: 3rem;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 3rem auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.3s steps(30, end),
+      blink-caret .5s step-end;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 47% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+
+.rectangle {
+    margin: 2rem 0;
+    height: 1px;
+    width: 88%;
+    background-color: #d4a29c6e;
+  }
+
+  .about-me {
+    padding-top: 2rem;
+    margin: 6em 0;
+    width: 80%;
+    background-color: #d4a29c6e;
+    text-align: center;
+    border-radius: 20px;
+    color: rgb(252, 248, 248);
+  }
+
+  .about-me img {
+    border-radius: 50%;
+    height: 10rem;
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-50%, -105%);
+    
+
+  }
+
+  .project-container {
+    display: flex;
+  }
+
+  .languages {
+    margin-top: 4rem;
+    text-align: center;
+    background-color: #d4a29c6e;
+    border-radius: 20px;
+  }
+
+  .languages img {
+    height: 4rem;
+  }
